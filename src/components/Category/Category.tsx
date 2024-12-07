@@ -13,22 +13,32 @@ import GamingImage from "../../../public/images/Category-Gamepad.png"
 
 
 const data = [
-  {image: PhoneImage,
+  {
+    id: 1,
+    image: PhoneImage,
     cardName: "Phones"
   },
-  {image: ComputerImage,
+  {
+    id: 2,
+    image: ComputerImage,
     cardName: "Computers"
   },
-  {image: SmartWatch,
+  {
+    id: 3,
+    image: SmartWatch,
     cardName: "SmartWatch"
   },
-  {image: Camera,
+  {
+    id: 4,
+    image: Camera,
     cardName: "Camera"
   },
   {
+    id: 5,
     image: HeadPhones,
     cardName: "HeadPhones"
   },{
+    id: 6,
     image: GamingImage,
     cardName: "Gaming"
   }
@@ -61,6 +71,7 @@ function Category() {
           {data.map((element) => {
             return(
               <CategoryCards 
+              key={element.id}
               image = {element.image}
               cardName={element.cardName}
               />

@@ -3,7 +3,6 @@ import Link from "next/link";
 import HeartVector from "../../../../public/icons/Heart Vector.png"
 import CartVector from "../../../../public/icons/Cart Vector.png"
 import InputVector from "../../../../public/icons/InputVector.png";
-import Home from "@/app/page";
 
 function Header() {
   return (

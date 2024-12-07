@@ -7,6 +7,7 @@ import ProductImage4 from "../../../public/images/ProductImage4.png"
 
 const data = [
     {
+      id: 1,
       image: ProductImage1,
       name: "The north coat",
       originalPrice: "$360",
@@ -15,6 +16,7 @@ const data = [
       imageWidth: 140,
       imageHeight: 146
     },{
+      id: 2,
       image: ProductImage2,
       name: "Gucci duffle bag",
       originalPrice: "$1160",
@@ -23,6 +25,7 @@ const data = [
       imageWidth: 178,
       imageHeight: 129
     },{
+      id: 3,
       image: ProductImage3,
       name: "RGB liquid CPU Cooler",
       originalPrice: "$170",
@@ -31,6 +34,7 @@ const data = [
       imageWidth: 191,
       imageHeight: 95
     },{
+      id: 4,
       image: ProductImage4,
       name: "Small BookSelf",
       discountedPrice: "$360",
@@ -66,6 +70,7 @@ function Products() {
           {data.map((element) => {
             return(
               <ProductCards 
+              key={element.id}
               name = {element.name}
               image = {element.image}
               originalPrice={element.originalPrice}

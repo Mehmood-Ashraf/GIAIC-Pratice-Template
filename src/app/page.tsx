@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import HomeImage from "../../public/images/Homepage- upperImage.png";
 import DropDown from "../../public/icons/DropDown.png";
 import Time from "../../public/images/time Image.png";
@@ -18,7 +17,7 @@ import Explore from "@/components/Explore/Explore";
 import Arrival from "@/components/NewArrival/Arrival";
 import Service from "@/components/CustomerService/Service";
 
-let data = [
+const data = [
   {
     id: 1,
     discount: "-40%",
@@ -74,12 +73,12 @@ export default function Home() {
         <div className="flex flex-col gap-4 pt-10">
           <div className="flex gap-[51px] items-center">
             <p className="font-poppins text-base font-normal">
-              Woman's Fashion
+              Woman&apos;s Fashion
             </p>
             <Image src={DropDown} alt="DropDown"></Image>
           </div>
           <div className="flex gap-[81px] items-center">
-            <p className="font-poppins text-base font-normal">Man's Fashion</p>
+            <p className="font-poppins text-base font-normal">Man&apos;s Fashion</p>
             <Image src={DropDown} alt="DropDown"></Image>
           </div>
           <p className="font-poppins text-base font-normal">Electronics</p>
@@ -122,6 +121,7 @@ export default function Home() {
           {data.map((element) => {
             return (
               <Cards
+              key={element.id}
                 discount={element.discount}
                 image={element.image}
                 name={element.name}

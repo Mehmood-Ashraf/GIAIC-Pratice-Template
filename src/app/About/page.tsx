@@ -13,37 +13,43 @@ import WillImage from "../../../public/images/About/image 47.png"
 import EmmaImage from "../../../public/images/About/image 51.png"
 import DotFrame from "../../../public/images/About/Frame 883.png"
 
-let data = [
+const data = [
   {
+    id: 1,
     image: Image1,
     heading: "10.5K",
     details: "Sellers active our site",
   }
   ,{
+    id: 2,
     image: Image2,
     heading: "45.5K",
     details: "Customer active in our site",
   },{
+    id: 3,
     image: Image3,
     heading: "25K",
     details: "Anual gross sale in our site",
   }
 ]
 
-let desCardData = [
+const desCardData = [
   {
+    id:1,
     image: TomImage,
     name: "Tom Cruise",
     designation: "Founder & Chairman",
     imageWidth: 236,
     imageHeight: 391
   },{
+    id: 2,
     image: EmmaImage,
     name: "Emma Watson",
     designation: "Managing Director",
     imageWidth: 294,
     imageHeight : 397
   },{
+    id: 3,
     image: WillImage,
     name: "Will Smith",
     designation: "Product Designer",
@@ -106,6 +112,7 @@ const About = () => {
       {data.map((item) => {
         return(
           <Card
+          key = {item.id}
           image = {item.image} 
           heading = {item.heading}
           details = {item.details}
@@ -119,6 +126,7 @@ const About = () => {
         {desCardData.map((items) => {
           return(
             <DesignationCard 
+            key={items.id}
             image={items.image}
             name={items.name}
             designation={items.designation}

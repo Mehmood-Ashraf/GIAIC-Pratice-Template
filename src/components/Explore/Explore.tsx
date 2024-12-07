@@ -14,6 +14,7 @@ import ExploreCard from "./ExploreCard";
 
 const data = [
   {
+    id: 1,
     image: ExploreImage1,
     name: "Breed Dry Dog Food",
     discountedPrice: "$100",
@@ -21,6 +22,7 @@ const data = [
     imageWidth: 115,
     imageHeight: 180,
   },{
+    id: 2,
     image: ExploreImage2,
     name: "CANON EOS DSLR Camera",
     discountedPrice: "$360",
@@ -28,6 +30,7 @@ const data = [
     imageWidth: 146,
     imageHeight: 163,
   },{
+    id: 3,
     image: ExploreImage3,
     name: "ASUS FHD Gaming Laptop",
     discountedPrice: "$700",
@@ -35,6 +38,7 @@ const data = [
     imageWidth: 172,
     imageHeight: 180,
   },{
+    id: 4,
     image: ExploreImage4,
     name: "Curology Product Set",
     discountedPrice: "$500",
@@ -42,6 +46,7 @@ const data = [
     imageWidth: 172,
     imageHeight: 159,
   },{
+    id: 5,
     discount: "NEW",
     image: ExploreImage5,
     name: "Kids Electric Car",
@@ -50,6 +55,7 @@ const data = [
     imageWidth: 180,
     imageHeight: 133,
   },{
+    id: 6,
     image: ExploreImage6,
     name: "Jr. Zoom Soccer Cleats",
     discountedPrice: "$1160",
@@ -57,6 +63,7 @@ const data = [
     imageWidth: 186,
     imageHeight: 164,
   },{
+    id: 7,
     discount: "NEW",
     image: ExploreImage7,
     name: "GP11 Shooter USB Gamepad",
@@ -65,6 +72,7 @@ const data = [
     imageWidth: 178,
     imageHeight: 150,
   },{
+    id: 8,
     image: ExploreImage8,
     name: "Quilted Satin Jacket",
     discountedPrice: "$660",
@@ -117,6 +125,7 @@ function Explore() {
   {data.map((element, index) => (
     <div key={index} className="w-[calc(25%-30px)] min-w-[250px] flex-shrink-0">
       <ExploreCard
+      key={element.id}
         discount = {element.discount} 
         image={element.image}
         name={element.name}

@@ -1,6 +1,5 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
-import TomImage from "../../../public/images/About/image 46.png"
 import TwitterImage from "../../../public/images/About/Icon-Twitter.png"
 import InstagramImage from "../../../public/images/About/icon-instagram.png"
 import LinkedinImage from "../../../public/images/About/Icon-Linkedin.png"

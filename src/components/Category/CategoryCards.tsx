@@ -1,6 +1,5 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
-import PhoneImage from "../../../public/images/PhoneImage.png"
 
 interface CatogoryCardsProps{
     image: StaticImageData;
